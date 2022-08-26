@@ -1,0 +1,244 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    /* Hiệu ứng cuộc trang scroll-behavior: smooth */
+    scroll-behavior: smooth;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.main-web{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(./img/Hinh-nen-bau-troi-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.text-right .line-one{
+    font-size: 70px;
+    font-weight: 200;
+    color: red;
+    position: absolute;
+    top: 6rem;
+    right: 20rem;
+    transform: rotate(336deg);
+    font-family: 'Lobster', cursive;
+}
+.text-right .line-two{
+    font-size: 105px;
+    font-weight: 400;
+    color: red;
+    position: absolute;
+    top: 10rem;
+    right: 6rem;
+    transform: rotate(336deg);
+    font-family: 'Lobster', cursive;
+}
+
+.text-left{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: inline-flex;
+    width: 35%;
+    z-index: 2;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.title-member{
+    font-size: 28px;
+    font-weight: 600;
+    border-left: 10px solid #fff;
+    padding-left: 15px;
+    padding-top: 5px;
+    margin-top: 90px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.avatar-left{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 5px solid white;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.text-left .member1, .member2, .member3{
+    display: flex;
+    padding: 15px;
+}
+/* .member3{
+    padding-bottom: 22%;
+} */
+.info-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+h2{
+    color: #fff;
+}
+.introduce-1{
+    font-style: italic;
+    color: yellow;
+    font-weight: 600;
+}
+.character-1{
+    font-style: italic;
+    color: #fff;
+    font-weight: 600;
+}
+.text-left::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: #000;
+    opacity: 0.5;
+    height: 100vh;
+
+}
+/* Tablet */
+
+@media (min-width: 740px ) and (max-width: 1024px)
+{
+    .text-right .line-one{
+        font-size: 50px;
+        top: 4rem;
+        right: 20rem;
+    }
+    .text-right .line-two{
+        font-size: 90px;
+        top: 5rem;
+        right: 5rem;
+    }
+    .text-left{
+            position: fixed;
+            top: 16.2rem;
+            height: 60%;
+            display: inline-flex;
+            width: 100%;
+            z-index: 2;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+    }
+    .text-left .member1, .member2, .member3{
+        padding: 5px;
+    }
+    .member{
+        width: 80%;
+    }
+    /* .member .avatar-left{
+        width: 22%;
+    } */
+    .member .info-right{
+
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-betweet; */
+        padding-left: 10px;
+    }
+    .member .info-repon{
+        width: 40%;
+        font-size: 18px;
+        padding-top: 2rem;
+        padding-left: 1rem;
+    }
+    .member .tablet-repon{
+        width: 55%;
+        padding-left: 10px;
+        border-top: 5px;
+        font-size: 20px;
+        width: 60%;
+        padding-top: 2rem;
+    }
+    .info-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 10px;
+    }
+    .size-repon{
+        width: 8rem;
+        height: 8rem;
+    }
+    .avatar-left{
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        border: 5px solid rgb(79, 224, 79);
+        overflow: hidden;
+        margin-right: 1rem;
+    }
+    .member3{
+        padding-bottom: 8vh;
+    }
+}
+/* Mobile */
+@media (max-width: 740px){
+    .text-right .line-one{
+        font-size: 29px;
+        font-weight: 200;
+        color: red;
+        position: absolute;
+        top: 4rem;
+        right: 13rem;
+        transform: rotate(336deg);
+        font-family: 'Lobster', cursive;
+    }
+    .text-right .line-two{
+        font-size: 45px;
+        font-weight: 400;
+        color: red;
+        position: absolute;
+        top: 6rem;
+        right: 7rem;
+        transform: rotate(336deg);
+        font-family: 'Lobster', cursive;
+    }
+    .text-left{
+        position: fixed;
+        top: 16.2rem;
+        height: 65%;
+        display: inline-flex;
+        width: 100%;
+        z-index: 2;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .avatar-left{
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        border: 5px solid white;
+        overflow: hidden;
+    }
+    .size-repon{
+        width: 6rem;
+        height: 6rem;
+    }
+    .title-member{
+        font-size: 24px;
+        font-weight: 600;
+        border-left: 10px solid #fff;
+        padding-left: 15px;
+        padding-top: 5px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        color: #fff;
+    }
+    .text-left .member1, .member2, .member3{
+        display: flex;
+        padding: 5px 15px;
+    }
+    .member3{
+        padding-bottom: 8%;
+    }
+}
