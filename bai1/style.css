@@ -137,6 +137,9 @@ h2{
     /* .member .avatar-left{
         width: 22%;
     } */
+    .title-member{
+        margin-top: 50px;
+    }
     .member .info-right{
 
         display: flex;
@@ -147,7 +150,7 @@ h2{
     .member .info-repon{
         width: 40%;
         font-size: 18px;
-        padding-top: 2rem;
+        padding-top: 1rem; 
         padding-left: 1rem;
     }
     .member .tablet-repon{
@@ -156,7 +159,7 @@ h2{
         border-top: 5px;
         font-size: 20px;
         width: 60%;
-        padding-top: 2rem;
+        padding-top: 1rem;
     }
     .info-right{
         display: flex;
@@ -165,12 +168,12 @@ h2{
         padding-left: 10px;
     }
     .size-repon{
-        width: 8rem;
-        height: 8rem;
+        width: 6rem;
+        height: 6rem;
     }
     .avatar-left{
-        width: 8rem;
-        height: 8rem;
+        width: 6rem;
+        height: 6rem;
         border-radius: 50%;
         border: 5px solid rgb(79, 224, 79);
         overflow: hidden;
